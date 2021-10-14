@@ -1,0 +1,13 @@
+// dark mode
+
+$d-mode-elements: hsl(209, 23%, 22%); //- Dark Blue (Dark Mode Elements)
+$d-mode-bg: hsl(207, 26%, 17%); //- Very Dark Blue (Dark Mode Background)
+
+// light mode
+
+$l-mode-text: hsl(200, 15%, 8%); //- Very Dark Blue (Light Mode Text)
+$l-mode-input: hsl(0, 0%, 52%); //- Dark Gray (Light Mode Input)
+$l-mode-bg: hsl(0, 0%, 98%); //- Very Light Gray (Light Mode Background)
+
+// both modes
+$white: hsl(0, 0%, 100%); //- White (Dark Mode Text & Light Mode Elements)

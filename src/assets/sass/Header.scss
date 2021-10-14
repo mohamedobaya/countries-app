@@ -1,0 +1,58 @@
+.header{
+    &-dark{
+        color: $white;
+        background-color: $d-mode-elements;
+    }
+    &-light{
+        color: $l-mode-text;
+        background-color: $white;
+    }
+    .content{
+        margin: auto;
+        padding: 2em 1em;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        
+        &-item{
+            cursor: pointer;
+            user-select:none;
+            -moz-user-select:none;
+            -webkit-user-select:none;
+            -webkit-touch-callout:none;
+            -ms-user-select:none;
+            &:hover{
+                opacity: 0.9;
+            }
+            &focus{
+                outline: none;
+            }
+        }
+        &-item1{
+            font-size: 1.2em;
+            font-weight: 800;
+        }
+        &-item2{
+            padding-top: 0.5em;
+            &-icon{
+                padding-right: 0.5em ;
+            }
+        }
+        @media (max-width: 350px) {
+            &-item1{
+                font-size: 1em;
+            }
+            &-item2{
+                padding-top: 0.25em;
+                &-icon{
+                    padding-right: 0.1em ;
+                }
+            }
+            
+        }
+        @media (min-width: 769px) {
+            width: 90%;
+        }
+    }
+    
+}

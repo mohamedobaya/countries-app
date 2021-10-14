@@ -1,0 +1,88 @@
+.search-filter{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2em 1em;
+    justify-content: space-between;
+    @media (min-width: 769px) {
+        width: 90%;
+        
+    }
+    .search{
+        padding: 1em 1em;
+        width: 20em;
+        border-radius: 0.25em;
+        &-light{
+            color: $l-mode-text;
+            box-shadow: 0px 0px 10px -5px $l-mode-input;
+        }
+        &-dark{
+            color: $white;
+            background-color: $d-mode-elements;
+            box-shadow: 0px 0px 10px -5px $l-mode-text;
+        }
+        &-input{
+            padding-left: 1em;
+            &-light{
+                color: $l-mode-text;
+            }
+            &-dark{
+                color: $white;
+            }
+            background-color: transparent;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .filter{
+        position: relative;
+        
+        //padding: 1em 1em;
+        //width: 10em;
+        @media (max-width: 460px) {
+            margin-top: 1em;
+        }
+        
+        &-select{
+            border-radius: 0.25em;
+            appearance: none;
+            //background-color: transparent;
+            border: 0;
+            padding: 1.4em 3em 1.4em 1em;
+            &-light{
+                color: $l-mode-text;
+                box-shadow: 0px 0px 10px -5px $l-mode-input;
+            }
+            &-dark{
+                color: $white;
+                background-color: $d-mode-elements;
+                box-shadow: 0px 0px 10px -5px $l-mode-text;
+            }
+            &:focus{
+                outline: none;
+            }
+            
+        }
+        &-arrow{
+            text-align: center;
+            padding: 1em 1em;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            background-color: transparent;
+            &-light{
+                color: $l-mode-text;
+            }
+            &-dark{
+                color: $white;
+                
+            }
+            height: 100%;
+            width: 2.5em; 
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.country{
+    margin: auto;
+    width: 88%;
+    &-dark{
+        color: $white;
+    }
+    &-light{
+        color: $l-mode-text;
+    }
+    &-btn{
+        cursor: pointer;
+        display: inline-block;
+        margin: 2em auto;
+        padding: 0.5em 2em;
+        &-light{
+            color: $l-mode-text;
+            box-shadow: 0px 0px 10px -5px $l-mode-input;
+        }
+        &-dark{
+            color: $white;
+            background-color: $d-mode-elements;
+            box-shadow: 0px 0px 10px -5px $l-mode-text;
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    &-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5em;
+        @media (max-width: 616px) {
+            grid-template-columns: 1fr;
+            grid-gap: 0; 
+        }
+        &-flag{
+            &-img{
+                width: 100%;
+                margin-bottom: 3em;
+            }
+        }
+        &-details{
+            &-head{
+                margin-bottom: 1em;
+            }
+            &-info{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 5em;
+                @media (max-width: 1033px) {
+                    grid-template-columns: 1fr;
+                    grid-gap: 0; 
+                }
+                line-height: 1.8em;
+                &-group{
+                    .item{
+                        &-head{
+                            font-weight: bold;
+                            margin-right: 0.4em;
+                        }
+                    }
+                }
+            }
+            &-borders{
+                &-head{
+                    margin: 2em auto;
+                    font-weight: bold;
+                }
+                &-btns{
+                    .border-btn{
+                        display: inline-block;
+                        cursor: pointer;
+                        display: inline-block;
+                        margin: 0.5em 0.5em 0.5em auto;
+                        padding: 0.5em 2em;
+                        &-light{
+                            color: $l-mode-text;
+                            box-shadow: 0px 0px 10px -5px $l-mode-input;
+                        }
+                        &-dark{
+                            color: $white;
+                            background-color: $d-mode-elements;
+                            box-shadow: 0px 0px 10px -5px $l-mode-text;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

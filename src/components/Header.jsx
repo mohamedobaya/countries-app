@@ -7,7 +7,7 @@ const Header = ({ mode, toggleThemeMode }) => (
     <div className={`header ${mode ? 'header-dark' : 'header-light'}`}>
         <div className="content">
             <div className="content-item content-item1">
-               <Link style={{  textDecoration: 'inherit'}} to='/'>
+               <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/'>
                    Where in the world ?
                 </Link> 
             </div>

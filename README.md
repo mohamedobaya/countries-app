@@ -1,7 +1,7 @@
-<h1>Weather app</h1>
+<h1>Countries app</h1>
 <br>
 <br>
-<h3>The link to the web app is <a href=''>here</a></h3>
+<h3>The link to the web app is <a href='https://countries-app-mohamedobaya.herokuapp.com/'>here</a></h3>
 <br>
 <br>
 This a weather app made by me
